@@ -25,6 +25,7 @@ training error/test error
 under fitting = high training error/training error close to test error/high bias
 
 1. [[Epoch vs Batch Size vs Iterations](https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9)]
+   [[Epoch, Batch Size, Iteration in Neural Network Training Process](https://medium.com/@crazyhatcap/epoch-batch-size-iteration-in-neural-network-training-process-bee58415eb8e)]
 2. [[ML | Under fitting and Overfitting](https://www.geeksforgeeks.org/underfitting-and-overfitting-in-machine-learning)]
 3. [[Under fitting Vs Just right Vs Overfitting in Machine learning](https://www.kaggle.com/discussions/getting-started/166897)]
 
@@ -77,5 +78,3 @@ Goal
 
 Step 1 : study article [[Machine Learning 101] (https://medium.com/onfido-tech/machine-learning-101-be2e0a86c96a)]
 Step 2 : modify code so that it can be run under *WANDB*.
-
-1. 

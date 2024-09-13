@@ -48,11 +48,25 @@ def main(args):
             }
         )
 
+    api = wandb.Api()
+
+    # Access attributes directly from the run object
+    # or from the W&B App
+    username = wandb.run.entity
+    project = wandb.run.project
+    run_id = wandb.run.id
+
+    print(f"{username =} {project =} {run_id =}")
+
+    run = api.run(f"{username}/{project}/{run_id}")
+    run.config["bar"] = 32
+    run.update()
+
 
 if __name__ == "__main__":
 
     # Override sys.argv
-    sys.argv = ['configure_param', '-b', '36', '-e', '60', '-lr', '5']
+    sys.argv = ['configure_param', '--batch_size', '40', '--epochs', '90', '--learning_rate', '5']
 
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
